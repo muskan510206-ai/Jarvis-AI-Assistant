@@ -1,0 +1,20 @@
+# S5 Agent Lab - JARVIS
+# Core stack. Install with: pip install -r requirements.txt
+
+langchain>=0.3
+langchain-groq>=0.2
+langchain-core>=0.3
+langgraph>=0.2
+pydantic>=2.7
+python-dotenv>=1.0
+
+# Long-term memory. sqlite3 is used by default (stdlib, nothing to install).
+# chromadb is listed for the optional semantic-search upgrade path shown in
+# memory.py / the workshop slides - it is NOT required to run JARVIS.
+chromadb>=0.5
+
+# Voice extension only (STT/TTS via OpenRouter + local mic/speaker I/O).
+# Not required for text-mode JARVIS.
+requests>=2.31
+sounddevice>=0.4
+soundfile>=0.12
